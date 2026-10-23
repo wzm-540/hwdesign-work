@@ -1,0 +1,38 @@
+{
+  "activations": 76,
+  "error_activations": 24,
+  "model_csim_cosim_bit_exact": "PASS",
+  "replay_words_status_sidebands": "PASS",
+  "rtl_input_stop_and_output_framing": "PASS",
+  "estimated_clock_ns": 6.674,
+  "clock_target": "PASS",
+  "throughput_target": "FAIL",
+  "resources": {
+    "BRAM_18K": 1,
+    "DSP": 1,
+    "FF": 732,
+    "LUT": 1335,
+    "URAM": 0
+  },
+  "timing": {
+    "scenario": "maximum_size",
+    "clock_period_ns": 10.0,
+    "nsamp": 1024,
+    "K": 16,
+    "first_payload_cycle": 305200,
+    "last_input_cycle": 306223,
+    "first_result_cycle": 306250,
+    "last_result_cycle": 331825,
+    "total_cycles": 26626,
+    "cycles_per_result": 26.001953125,
+    "samples_per_cycle": 0.038458649440396606,
+    "first_result_latency_cycles": 1050,
+    "input_continuously_valid": true,
+    "output_no_backpressure": true
+  },
+  "activation_latency_min_avg_max": [
+    8,
+    4404,
+    26673
+  ]
+}

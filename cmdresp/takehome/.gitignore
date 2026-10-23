@@ -1,0 +1,9 @@
+maxaffine_proj/
+include/
+vcd/
+__pycache__/
+*.log
+*.jou
+.Xil/
+.hls.failed
+Command-Response Mini-Project_results.json

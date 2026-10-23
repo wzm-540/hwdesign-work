@@ -1,0 +1,18 @@
+Run 1 / prompt version 2 observation, before waveform extraction:
+
+Vitis 2026.1 cosim_design -trace_level port generates
+maxaffine_proj/solution1/sim/verilog/maxaffine.tcl. Its trace command is
+log_wave on the top-level design ports, followed by run all and quit.
+It writes maxaffine.wdb; it does not include open_vcd or log_vcd.
+
+The official Waveflow helper waveflow.scripts.xsim_vcd.run_xsim_vcd modifies
+that Tcl script and replays the already compiled XSIM snapshot to export
+an open VCD. This is documented at:
+https://sdrangan.github.io/waveflow/docs/guide/timing/vcd.html
+
+Prompt version 3 explicitly permits this extraction replay, requires it to
+be recorded separately, and retains one cosim_design invocation. The replay
+uses exactly the same RTL and full scenario set. No arithmetic, buffer,
+protocol, target or expected output is changed. C simulation and synthesis
+therefore remain valid; replay outputs/status and physical handshakes are
+checked against the original expectations.

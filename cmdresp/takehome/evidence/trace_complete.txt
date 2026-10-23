@@ -1,0 +1,1 @@
+PASS: compiled XSIM snapshot replayed and VCD exported

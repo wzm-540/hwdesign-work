@@ -1,0 +1,16 @@
+{
+  "scenario": "maximum_size",
+  "clock_period_ns": 10.0,
+  "nsamp": 1024,
+  "K": 16,
+  "first_payload_cycle": 305200,
+  "last_input_cycle": 306223,
+  "first_result_cycle": 306250,
+  "last_result_cycle": 331825,
+  "total_cycles": 26626,
+  "cycles_per_result": 26.001953125,
+  "samples_per_cycle": 0.038458649440396606,
+  "first_result_latency_cycles": 1050,
+  "input_continuously_valid": true,
+  "output_no_backpressure": true
+}

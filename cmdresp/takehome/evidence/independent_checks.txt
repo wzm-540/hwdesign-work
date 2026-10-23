@@ -1,0 +1,4 @@
+PASS: 4 hand-computed arithmetic cases and reconfiguration scenario
+PASS: 4 coefficient sets x 65536 raw inputs against independent NumPy
+PASS: 16 randomized K cases x 1024 samples; seed 20261022
+PASS: 76 protocol activations against independent scenario intent

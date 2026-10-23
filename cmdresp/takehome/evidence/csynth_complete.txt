@@ -1,0 +1,1 @@
+PASS: Vitis stage csynth completed; see csynth_vitis.txt

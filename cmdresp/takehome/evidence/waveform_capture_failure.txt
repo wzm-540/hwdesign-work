@@ -1,0 +1,27 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Thu Oct 22 19:52:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/maxaffine/xsim_script.tcl
+# xsim {maxaffine} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=maxaffine_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -view {{maxaffine_dataflow_ana.wcfg}} -tclbatch {maxaffine_vcd.tcl} -protoinst {maxaffine.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file maxaffine.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_maxaffine_top/AESL_inst_maxaffine//AESL_inst_maxaffine_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_maxaffine_top/AESL_inst_maxaffine/grp_maxaffine_Pipeline_line_loop_fu_458/grp_maxaffine_Pipeline_line_loop_fu_458_activity
+Time resolution is 1 ps
+open_wave_config maxaffine_dataflow_ana.wcfg
+source maxaffine_vcd.tcl
+## open_vcd
+## log_vcd /apatb_maxaffine_top/AESL_inst_maxaffine/*
+ERROR: unexpected exception when evaluating tcl command
+    while executing
+"log_vcd /apatb_maxaffine_top/AESL_inst_maxaffine/*"
+    (file "maxaffine_vcd.tcl" line 3)
+INFO: xsimkernel Simulation Memory Usage: 542972 KB (Peak: 597548 KB), Simulation CPU Usage: 1970 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 22 19:52:39 2026...
+VCD copied to /home/zw5112/hwdesign/cmdresp/takehome/vcd/maxaffine.vcd
+Waveform extraction completed: evidence/rtl_trace.vcd.gz

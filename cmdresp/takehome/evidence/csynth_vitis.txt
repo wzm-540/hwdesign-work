@@ -1,0 +1,130 @@
+
+****** vitis-run v2026.1 (64-bit)
+  **** SW Build 6497934 on 2026-06-16-10:22:25
+  **** Start of session at: Thu Oct 22 19:48:37 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2026.1 6493734
+Sourcing Tcl script '/home/zw5112/hwdesign/cmdresp/takehome/run.tcl'
+INFO: [HLS 200-1510] Running: open_project maxaffine_proj 
+WARNING: [HLS 200-2182] The 'maxaffine_proj' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Opening solution '/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj'.
+INFO: [HLS 200-1510] Running: set_top maxaffine 
+INFO: [HLS 200-1510] Running: add_files maxaffine.cpp -cflags -I. 
+INFO: [HLS 200-10] Adding design file 'maxaffine.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_maxaffine.cpp -cflags -I. 
+INFO: [HLS 200-10] Adding test bench file 'tb_maxaffine.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Opening solution '/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.01 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.77 seconds; current allocated memory: 344.781 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'maxaffine.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.74 seconds. CPU system time: 1.03 seconds. Elapsed time: 11.28 seconds; current allocated memory: 346.832 MB.
+INFO: [HLS 200-1995] There were 3,538 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'emit(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<32>, bool)' into 'body(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<16>&)' (maxaffine.cpp:81:13)
+INFO: [HLS 214-131] Inlining function 'body(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<16>&)' into 'maxaffine(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<16>&)' (maxaffine.cpp:96:21)
+INFO: [HLS 200-1995] There were 561 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 416 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'void streamutils::write_axi4_word<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<32>, bool)' into 'maxaffine(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<16>&)' (maxaffine.cpp:87:0)
+INFO: [HLS 200-1995] There were 466 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 342 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 321 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 319 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 319 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 319 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 502 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 498 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 425 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-421] Partitioning small array 'h.i' due to array size. (maxaffine.cpp:16:21)
+INFO: [HLS 214-248] Applying array_partition to 'h.i': Complete partitioning on dimension 1. (maxaffine.cpp:16:21)
+INFO: [HLS 200-1995] There were 362 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 357 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 321 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 255 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.29 seconds. CPU system time: 0.86 seconds. Elapsed time: 10.25 seconds; current allocated memory: 356.645 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 356.645 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 357.520 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 357.750 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (maxaffine.cpp:72:33) to (maxaffine.cpp:59:9) in function 'maxaffine'... converting 5 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 380.801 MB.
+INFO: [HLS 200-2060] Failed to convert nested loops 'sample_loop'(maxaffine.cpp:59:9) and 'line_loop'(maxaffine.cpp:64:13) in function 'maxaffine' into perfectly nested loops.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 381.996 MB.
+INFO: [HLS 200-2255] Checking Wire Delay Status: Wire Delay Mode is ON
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'maxaffine' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxaffine_Pipeline_line_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=p) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'line_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'line_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.09 seconds; current allocated memory: 381.996 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 381.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxaffine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 382.535 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 382.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxaffine_Pipeline_line_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxaffine_Pipeline_line_loop' pipeline 'line_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxaffine_Pipeline_line_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 382.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxaffine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/in_stream_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/in_stream_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/in_stream_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/in_stream_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/out_stream_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/out_stream_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/out_stream_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/out_stream_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/halted' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/error' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxaffine/tx_id' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'maxaffine' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'halted', 'error', 'tx_id' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxaffine'.
+INFO: [RTMG 210-278] Implementing memory 'maxaffine_a_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'maxaffine_x_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 382.996 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.48 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.74 seconds; current allocated memory: 390.535 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/zw5112/hwdesign/cmdresp/takehome/maxaffine_proj/solution1/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.97 seconds. CPU system time: 0.13 seconds. Elapsed time: 2.66 seconds; current allocated memory: 393.410 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for maxaffine.
+INFO: [VLOG 209-307] Generating Verilog RTL for maxaffine.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 149.83 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:27; Allocated memory: 48.629 MB.
+MAXAFFINE_SUCCESS csynth
+INFO: [HLS 200-112] Total CPU user time: 15.65 seconds. Total CPU system time: 2.75 seconds. Total elapsed time: 30.47 seconds; peak allocated memory: 393.410 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 32s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

@@ -1,0 +1,4 @@
+PASS: XSIM replay completed all 76 activations; final timestamp 3358365000 ps.
+The first postprocessing validator incorrectly used VCDVCD only_sigs=True, which stops at the header and reports endtime=0.
+Corrected the validator to inspect final recorded timestamps and preserved the existing completed capture, without any additional RTL replay.
+Physical handshakes and raw replay outputs are checked separately by analyze.py.

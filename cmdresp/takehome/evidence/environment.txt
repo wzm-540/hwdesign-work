@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "python_executable": "/home/zw5112/hwdesign/.venv/bin/python",
+  "waveflow": "0.1.0",
+  "numpy": "2.5.3",
+  "fpga": "xc7z020clg484-1",
+  "requested_clock_ns": 10,
+  "reference": "https://github.com/sdrangan/waveflow/blob/main/examples/stream_inband/run.tcl",
+  "mcp": "Not connected; read public upstream reference source and local installed Waveflow instead."
+}
